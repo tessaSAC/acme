@@ -1,4 +1,16 @@
 {% extends './layout.html' %}
 {% block content %}
+<div>
+<button class="btn btn-primary"> Add a Product </button>
+</div>
+ <div> 
+ {% for product in products %}    
+    
+ <span> {{product.name}}</span>
+ <button class = "btn btn-danger">Delete</button>
+ <button class = "btn btn-primary">Edit</button>
+
+ {% endfor %}
+</div>
 
 {% endblock %}
