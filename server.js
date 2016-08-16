@@ -9,3 +9,5 @@ app.engine('html', swig.renderFile);
 app.listen(3000, function(){
   console.log('listening on ' + 3000);
 });
+
+var routes = require('/routes');
