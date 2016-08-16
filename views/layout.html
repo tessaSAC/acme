@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>ACME</title>
+    <link rel="stylesheet"" href="/bootstrap/dist/css/bootstrap.css"" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Acme</h1>
+      <ul style="margin-bottom: 10px"" class="nav nav-tabs">
+        <li {% if nav === 'products' %} class="active" {% endif %}><a href="/products">Products</a></li>
+        <li {% if nav === 'home'  %} class="active" {% endif %}><a href="/">Home</a></li>
+      </ul>
+      {% block content %}
+
+      {% endblock %}
+    </div>
+  </body>
+</html>

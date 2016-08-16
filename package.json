@@ -1,0 +1,21 @@
+{
+  "name": "acme-products",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "bootstrap": "^3.3.6",
+    "express": "^4.14.0",
+    "method-override": "^2.3.6",
+    "swig": "^1.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.9.2"
+  }
+}
