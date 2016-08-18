@@ -22,6 +22,7 @@ module.exports = {
   },
 
   addProduct: function (product) {
+    
 
     var allProductIds = this.getProducts().map(function (product) {
         return product.id;
@@ -31,8 +32,10 @@ module.exports = {
   
     product.id = maxId + 1;
 
-    _products.push(product);
+    console.log("maxId:", maxId)
 
+    _products.push({ id: product.id, name: product });
+    console.log(_products);
   },
 
   deleteProduct: function (id) {

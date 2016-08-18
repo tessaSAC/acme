@@ -13,5 +13,17 @@ router.get('/products', function(req,res, next){
         products: products
     });
 })
+router.get('/products/add', function(req,res, next){
+    res.render('add');
+});
+
+router.post('/products/add',function(req, res, next){
+   console.log(req.body.product);
+   product.addProduct(req.body.product);
+   
+   res.redirect('/products');
+})
+
+
 
 module.exports = router; 
